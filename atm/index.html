@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ATM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <div class="container" id="login" style="display: block;">
+        <form class="form" id="login" >Abza Ke
+            <h1 class="form__title" id="pinHeading">Enter your Bank Pin</h1>
+            <div class="card_info" id="card_info" style="display: ;">
+                <h1><b>Card Number</b>: 4512 XXXX XXXX XXXX</h1>
+            </div>
+            <div class="form__input-group" id="pinDiv" style="display:block;">
+                <input type="password" class="form__input" id="pin1" autofocus placeholder="Enter Pin" maxlength="4"/>
+                <button class="form__button btnOK" id="btnEnter" type="button">Enter<img src="./assets/arrow.png"></button>
+            </div>
+            <div class="trans"><h3 id="pinMsg" class="heading head1" style="color:;"></h3></div>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot pin,<b> Call support?</b></a>
+            </p>
+        </form>
+    </div>
+        <div class="buttons" style="display: none;" id="btnsScreen">
+            <div class="headings">Welcome to your Abza Account</div>
+            <div><h1 class="heading" >Please Select your desired transaction</h1></div>
+            <div class="buttons-left">
+                <button class="btn" id="withdraw">Cash widthdraw</button>
+                <button class="btn" id="ballanceInquiry">Check Balance</button>
+                <button class="btn" id="deposit">Cash Deposit</button>
+            </div>
+            <div class="buttons-right">
+                <button class="btn" id="billPay">Pay Bills</button>
+                <button class="btn" id="transfer">Transfer</button>
+                <button class="btn" id="Exit">Exit</button>
+            </div>
+        </div>
+        <div class="transcations" id="transactions" style="display:none">
+                <div class="trans"><h1 id="firstText" class="heading head1"></h1></div>
+                
+                <div id="amounts" style="display:;">
+                    <input id="amountIn" type="number"  placeholder="Enter amount Ksh." class="pin form__input" />
+                    <button class="form__button btnOK" type="button" id="btnOK"><span id="num">Okay</span></button>
+                <div class="trans"><h3 id="secondText" class="heading head1"></h3></div>
+                <div class="trans"><h3 class="heading head1" id="amount"></span></h3></div>
+                <div class="trans"><button id="lin1" type="button"><h3 class="heading" id="back">Back to main screen</h3></button></div>
+            </div>
+        </div>
+        
+        <div class="transactions" id="billPayDiv" style="display:none">
+            
+            <div class="trans"><h1 id="firstText2" class="heading head1"></h1></div>
+            <div id="ref" style="display:block">
+                <input id="reffIn" type="number"  placeholder="" class="pin form__input" />
+                <button class="btnOK form__button" id="btnReff"><span id="num">Enter</span></button>
+            </div>
+            <div id="billIn" style="display:none">
+                <input id="amountIn2" type="number"  placeholder="" class="pin form__input" />
+                <button class="form__button btnOK" id="btnOK2"><span id="num">$</span></button>
+            </div>
+            <div class="trans"><h3 id="secondText2" class="heading head1"></h3></div>
+            <div class="trans"><h3 class="heading head1" id="amount2"></span></h3></div>
+
+            <div class="trans"><a id="lin2" href="#"><h3 class="heading head1" id="back">Back to main secreen</h3></a></div>
+           </div>
+           
+           
+        </div>
+    
+
+    <script src='./main.js'></script>
+</body>
+</html>
